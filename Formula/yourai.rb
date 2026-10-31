@@ -4,9 +4,7 @@ class Yourai < Formula
   license "MIT"
 
   livecheck do
-    url "https://yourai.bdtren.com/cli/latest.txt"
-    strategy :page_match
-    regex(/v?(\d+(?:\.\d+)+)/i)
+    skip "Platform-specific URLs; check https://yourai.bdtren.com/cli/latest.txt"
   end
 
   on_macos do
