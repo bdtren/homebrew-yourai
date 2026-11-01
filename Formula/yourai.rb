@@ -9,23 +9,23 @@ class Yourai < Formula
 
   on_macos do
     on_arm do
-      url "https://yourai.bdtren.com/cli/releases/v0.0.3/yourai-v0.0.3-aarch64-apple-darwin.tar.gz"
-      sha256 "67c31f2dd3c0b811a74175a6c0c8e87cd9ef9c4008dd143a9fd8dcde4cac2de0"
+      url "https://yourai.bdtren.com/cli/releases/v0.0.4/yourai-v0.0.4-aarch64-apple-darwin.tar.gz"
+      sha256 "3b38ee90bcf6175513800f36c2515bdf0c7ce35b71ea69523f25329dfe59f761"
     end
     on_intel do
-      url "https://yourai.bdtren.com/cli/releases/v0.0.3/yourai-v0.0.3-x86_64-apple-darwin.tar.gz"
-      sha256 "321aecc5aa79fbe1b9e9d4dee24098f807799dc58880e788fdcc7807b8898e29"
+      url "https://yourai.bdtren.com/cli/releases/v0.0.4/yourai-v0.0.4-x86_64-apple-darwin.tar.gz"
+      sha256 "0f7acacf3b29939de55b8e51a52db3312b699fd39783e75599bb511cf3c97608"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://yourai.bdtren.com/cli/releases/v0.0.3/yourai-v0.0.3-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "af05872890be54bbb2e67f99668df5db6b40ee70ebc1c840954d68183f3439bb"
+      url "https://yourai.bdtren.com/cli/releases/v0.0.4/yourai-v0.0.4-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "ee8437c3f23bf7b962a2cd7a78950904128606aa5af7e284bc516fa0bd568244"
     end
     on_intel do
-      url "https://yourai.bdtren.com/cli/releases/v0.0.3/yourai-v0.0.3-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "0e87a59324eda923acebdc1862023f474f89cf9b4527faed33ec913e9b8a7de7"
+      url "https://yourai.bdtren.com/cli/releases/v0.0.4/yourai-v0.0.4-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "78fdde6464bcbd59cc77b277e150d7fa2cd8931a2317bae2cdd12deb8d0e930c"
     end
   end
 
@@ -34,6 +34,6 @@ class Yourai < Formula
   end
 
   test do
-    assert_match "0.0.3", shell_output("#{bin}/yourai --version")
+    assert_match "0.0.4", shell_output("#{bin}/yourai --version")
   end
 end
