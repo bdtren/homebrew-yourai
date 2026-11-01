@@ -4,10 +4,14 @@ Homebrew tap for [yourai](https://yourai.bdtren.com), a CLI that builds and runs
 your own local AI.
 
 ```sh
-brew install bdtren/yourai/yourai
-# or: brew tap bdtren/yourai && brew install yourai
+brew tap bdtren/yourai
+brew trust --tap bdtren/yourai
+brew install yourai
 yourai doctor
 ```
+
+Homebrew 7 and later refuses to load formulae from taps you have not trusted, so run
+`brew trust` once after tapping. Older Homebrew versions skip that step.
 
 Update with `brew upgrade yourai`, remove with `brew uninstall yourai`.
 
